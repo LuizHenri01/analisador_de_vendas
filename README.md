@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Projeto desenvolvido para praticar fundamentos de Python aplicados à análise de dados.
+Projeto em desenvolvimento para praticar e relembrar fundamentos de Python aplicados à análise de dados.
 
 ## Conceitos praticados
 
