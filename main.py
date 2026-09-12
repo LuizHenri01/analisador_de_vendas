@@ -1,15 +1,42 @@
-vendas = [
-    {"produto": "Notebook", "valor": 3500},
-    {"produto": "Mouse", "valor": 120},
-    {"produto": "Teclado", "valor": 250},
-    {"produto": "Monitor", "valor": 1200},
-    {"produto": "Headset", "valor": 300}
-]
+import csv
+
+def processar_linha(linha):
+    if linha["produto"] == "":
+        print("Erro: produto vazio")
+        return None # sem venda valida a partir desse registro
+
+    try:
+        linha["valor"] = int(linha["valor"])
+        return linha
+
+    except ValueError:
+        print(
+            f"Erro ao processar produto: {linha['produto']} "
+            f"| Valor recebido: {linha['valor']}"
+        )
+        return None
 
 
-# Calcula o faturamento total
+def carregar_vendas():
+    vendas = []
+    erros = 0
+
+    with open("vendas.csv", mode="r", encoding="utf-8") as arquivo:
+        leitor = csv.DictReader(arquivo)
+
+        for linha in leitor:
+            venda = processar_linha(linha)
+
+            if venda is None:
+                erros += 1
+                continue
+
+            vendas.append(venda)
+
+    return vendas, erros
+
+
 def calcular_faturamento(vendas):
-
     total = 0
 
     for venda in vendas:
@@ -18,9 +45,7 @@ def calcular_faturamento(vendas):
     return total
 
 
-# Encontra a maior venda
 def encontrar_maior_venda(vendas):
-
     maior_venda = vendas[0]["valor"]
 
     for venda in vendas:
@@ -30,9 +55,7 @@ def encontrar_maior_venda(vendas):
     return maior_venda
 
 
-# Encontra a menor venda
 def encontrar_menor_venda(vendas):
-
     menor_venda = vendas[0]["valor"]
 
     for venda in vendas:
@@ -42,9 +65,7 @@ def encontrar_menor_venda(vendas):
     return menor_venda
 
 
-# Encontra o produto com a maior venda
 def encontrar_produto_maior_venda(vendas):
-
     maior_venda = vendas[0]["valor"]
     produto_maior_venda = vendas[0]["produto"]
 
@@ -56,9 +77,7 @@ def encontrar_produto_maior_venda(vendas):
     return produto_maior_venda, maior_venda
 
 
-# Encontra o produto com a menor venda
 def encontrar_produto_menor_venda(vendas):
-
     menor_venda = vendas[0]["valor"]
     produto_menor_venda = vendas[0]["produto"]
 
@@ -70,33 +89,34 @@ def encontrar_produto_menor_venda(vendas):
     return produto_menor_venda, menor_venda
 
 
-# Calcula o faturamento
-total = calcular_faturamento(vendas)
+def calcular_ticket_medio(vendas):
+    total = calcular_faturamento(vendas)
+    quantidade_vendas = len(vendas)
 
-# Calcula a quantidade de vendas
-qntd_vendas = len(vendas)
+    return total / quantidade_vendas
 
-# Calcula o ticket médio
-ticket_medio = total / qntd_vendas
 
-# Encontra a maior venda
+# Carregamento dos dados
+vendas, erros = carregar_vendas()
+
+# Análises
+faturamento = calcular_faturamento(vendas)
+quantidade_vendas = len(vendas)
+ticket_medio = calcular_ticket_medio(vendas)
+
 maior_venda = encontrar_maior_venda(vendas)
-
-# Encontra a menor venda
 menor_venda = encontrar_menor_venda(vendas)
 
-# Encontra produto e valor da maior venda
-produto_maior_venda, valor_maior_venda = encontrar_produto_maior_venda(vendas)
-
-# Encontra produto e valor da menor venda
-produto_menor_venda, valor_menor_venda = encontrar_produto_menor_venda(vendas)
+produto_maior, valor_maior = encontrar_produto_maior_venda(vendas)
+produto_menor, valor_menor = encontrar_produto_menor_venda(vendas)
 
 
-# Exibe os resultados
-print(f"Faturamento total: R$ {total}")
-print(f"Quantidade de vendas: {qntd_vendas}")
+# Resultados
+print(f"Faturamento total: R$ {faturamento}")
+print(f"Quantidade de vendas: {quantidade_vendas}")
 print(f"Ticket médio: R$ {ticket_medio:.2f}")
 print(f"Maior venda: R$ {maior_venda}")
 print(f"Menor venda: R$ {menor_venda}")
-print(f"Produto com maior venda: {produto_maior_venda} - R$ {valor_maior_venda}")
-print(f"Produto com menor venda: {produto_menor_venda} - R$ {valor_menor_venda}")
+print(f"Produto com maior venda: {produto_maior} - R$ {valor_maior}")
+print(f"Produto com menor venda: {produto_menor} - R$ {valor_menor}")
+print(f"Registros inválidos: {erros}")
