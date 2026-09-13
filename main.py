@@ -1,9 +1,11 @@
 import csv
+import pandas as pd
+
 
 def processar_linha(linha):
     if linha["produto"] == "":
         print("Erro: produto vazio")
-        return None # sem venda valida a partir desse registro
+        return None
 
     try:
         linha["valor"] = int(linha["valor"])
@@ -36,33 +38,27 @@ def carregar_vendas():
     return vendas, erros
 
 
-def calcular_faturamento(vendas):
-    total = 0
-
-    for venda in vendas:
-        total += venda["valor"]
-
-    return total
+def calcular_faturamento(df):
+    return df["valor"].sum()
 
 
-def encontrar_maior_venda(vendas):
-    maior_venda = vendas[0]["valor"]
+def calcular_ticket_medio(df):
+    total = calcular_faturamento(df)
+    quantidade_vendas = len(df)
 
-    for venda in vendas:
-        if venda["valor"] > maior_venda:
-            maior_venda = venda["valor"]
-
-    return maior_venda
+    return total / quantidade_vendas
 
 
-def encontrar_menor_venda(vendas):
-    menor_venda = vendas[0]["valor"]
+def encontrar_maior_venda(df):
+    indice = df["valor"].idxmax()
 
-    for venda in vendas:
-        if venda["valor"] < menor_venda:
-            menor_venda = venda["valor"]
+    return df.loc[indice, "valor"]
 
-    return menor_venda
+
+def encontrar_menor_venda(df):
+    indice = df["valor"].idxmin()
+
+    return df.loc[indice, "valor"]
 
 
 def encontrar_produto_maior_venda(vendas):
@@ -89,23 +85,19 @@ def encontrar_produto_menor_venda(vendas):
     return produto_menor_venda, menor_venda
 
 
-def calcular_ticket_medio(vendas):
-    total = calcular_faturamento(vendas)
-    quantidade_vendas = len(vendas)
-
-    return total / quantidade_vendas
-
-
 # Carregamento dos dados
 vendas, erros = carregar_vendas()
 
-# Análises
-faturamento = calcular_faturamento(vendas)
-quantidade_vendas = len(vendas)
-ticket_medio = calcular_ticket_medio(vendas)
+# Criação do DataFrame
+df = pd.DataFrame(vendas)
 
-maior_venda = encontrar_maior_venda(vendas)
-menor_venda = encontrar_menor_venda(vendas)
+# Análises
+faturamento = calcular_faturamento(df)
+quantidade_vendas = len(df)
+ticket_medio = calcular_ticket_medio(df)
+
+maior_venda = encontrar_maior_venda(df)
+menor_venda = encontrar_menor_venda(df)
 
 produto_maior, valor_maior = encontrar_produto_maior_venda(vendas)
 produto_menor, valor_menor = encontrar_produto_menor_venda(vendas)
