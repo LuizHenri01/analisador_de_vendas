@@ -77,9 +77,16 @@ vendas, erros = carregar_vendas()
 
 df = pd.DataFrame(vendas)
 
+# Calcula o faturamento de cada venda
 df["faturamento"] = df["quantidade"] * df["valor"]
 
+# Extrai o dia da semana da coluna de data
+df["dia_semana"] = df["data"].dt.day_name()
+
+
+# =========================
 # RESUMO GERAL
+# =========================
 
 faturamento = calcular_faturamento(df)
 quantidade_vendas = len(df)
@@ -90,7 +97,9 @@ produto_maior, valor_maior = encontrar_maior_venda(df)
 produto_menor, valor_menor = encontrar_menor_venda(df)
 
 
+# =========================
 # TOP 3 VENDAS
+# =========================
 
 vendas_ordenadas = df.sort_values(
     "faturamento",
@@ -99,7 +108,10 @@ vendas_ordenadas = df.sort_values(
 
 top_3_vendas = vendas_ordenadas.head(3)
 
+
+# =========================
 # RESUMO POR PRODUTO
+# =========================
 
 resumo_produtos = df.groupby("produto").agg(
     quantidade_vendas=("id", "size"),
@@ -107,7 +119,10 @@ resumo_produtos = df.groupby("produto").agg(
     faturamento=("faturamento", "sum")
 )
 
+
+# =========================
 # RESUMO POR CATEGORIA
+# =========================
 
 resumo_categorias = df.groupby("categoria").agg(
     quantidade_vendas=("id", "size"),
@@ -115,7 +130,10 @@ resumo_categorias = df.groupby("categoria").agg(
     faturamento=("faturamento", "sum")
 )
 
+
+# =========================
 # RESUMO POR VENDEDOR
+# =========================
 
 resumo_vendedores = df.groupby("vendedor").agg(
     quantidade_vendas=("id", "size"),
@@ -132,7 +150,10 @@ valor_maior_faturamento_vendedor = resumo_vendedores.loc[
     "faturamento"
 ]
 
+
+# =========================
 # RESUMO POR PAGAMENTO
+# =========================
 
 resumo_pagamentos = df.groupby("forma_pagamento").agg(
     quantidade_vendas=("id", "size"),
@@ -140,12 +161,25 @@ resumo_pagamentos = df.groupby("forma_pagamento").agg(
 )
 
 
+# =========================
 # FATURAMENTO POR DATA
+# =========================
 
 faturamento_por_data = df.groupby("data")["faturamento"].sum()
 
 
+# =========================
+# FATURAMENTO POR DIA DA SEMANA
+# =========================
+
+faturamento_por_dia_semana = df.groupby(
+    "dia_semana"
+)["faturamento"].sum()
+
+
+# =========================
 # EXIBIÇÃO DOS RESULTADOS
+# =========================
 
 print("\n=== RESUMO GERAL ===")
 
@@ -167,22 +201,22 @@ print(
 )
 
 
-print("\n RESUMO POR PRODUTO ")
+print("\n=== RESUMO POR PRODUTO ===")
 
 print(resumo_produtos)
 
 
-print("\n RESUMO POR CATEGORIA =")
+print("\n=== RESUMO POR CATEGORIA ===")
 
 print(resumo_categorias)
 
 
-print("\n RESUMO POR VENDEDOR ")
+print("\n=== RESUMO POR VENDEDOR ===")
 
 print(resumo_vendedores)
 
 
-print("\n VENDEDOR COM MAIOR FATURAMENTO ")
+print("\n=== VENDEDOR COM MAIOR FATURAMENTO ===")
 
 print(
     f"{vendedor_maior_faturamento} - "
@@ -190,11 +224,16 @@ print(
 )
 
 
-print("\n RESUMO POR FORMA DE PAGAMENTO ")
+print("\n=== RESUMO POR FORMA DE PAGAMENTO ===")
 
 print(resumo_pagamentos)
 
 
-print("\n FATURAMENTO POR DATA ")
+print("\n=== FATURAMENTO POR DATA ===")
 
 print(faturamento_por_data)
+
+
+print("\n=== FATURAMENTO POR DIA DA SEMANA ===")
+
+print(faturamento_por_dia_semana)
