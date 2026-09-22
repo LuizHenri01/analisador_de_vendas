@@ -1,31 +1,501 @@
 id,produto,categoria,quantidade,valor,data,vendedor,forma_pagamento
-1,Notebook,Eletronicos,1,3500,2026-09-01,Ana,Cartao
-2,Mouse,Perifericos,2,120,2026-09-01,Carlos,Pix
-3,Teclado,Perifericos,1,250,2026-09-02,Ana,Pix
-4,Notebook,Eletronicos,1,3500,2026-09-02,Joao,Cartao
-5,Monitor,Eletronicos,2,1200,2026-09-03,Carlos,Boleto
-6,Mouse,Perifericos,3,120,2026-09-03,Ana,Pix
-7,Headset,Perifericos,1,300,2026-09-04,Joao,Cartao
-8,Mouse,Perifericos,1,120,2026-09-04,Carlos,Pix
-9,Teclado,Perifericos,2,250,2026-09-05,Ana,Cartao
-10,Monitor,Eletronicos,1,1200,2026-09-05,Joao,Pix
-11,Notebook,Eletronicos,2,3500,2026-09-06,Carlos,Cartao
-12,Headset,Perifericos,2,300,2026-09-06,Ana,Pix
-13,Mouse,Perifericos,5,120,2026-09-07,Joao,Pix
-14,Monitor,Eletronicos,1,1200,2026-09-07,Carlos,Boleto
-15,Teclado,Perifericos,3,250,2026-09-08,Ana,Cartao
-16,Notebook,Eletronicos,1,3500,2026-09-08,Joao,Pix
-17,Headset,Perifericos,3,300,2026-09-09,Carlos,Cartao
-18,Mouse,Perifericos,2,120,2026-09-09,Ana,Pix
-19,Monitor,Eletronicos,2,1200,2026-09-10,Joao,Cartao
-20,Notebook,Eletronicos,1,3500,2026-09-10,Carlos,Pix
-21,Teclado,Perifericos,1,250,2026-09-11,Ana,Boleto
-22,Mouse,Perifericos,4,120,2026-09-11,Joao,Pix
-23,Headset,Perifericos,1,300,2026-09-12,Carlos,Cartao
-24,Monitor,Eletronicos,3,1200,2026-09-12,Ana,Cartao
-25,Notebook,Eletronicos,1,3500,2026-09-13,Joao,Boleto
-26,Mouse,Perifericos,2,120,2026-09-13,Carlos,Pix
-27,Teclado,Perifericos,2,250,2026-09-14,Ana,Cartao
-28,Monitor,Eletronicos,1,1200,2026-09-14,Joao,Pix
-29,Headset,Perifericos,2,300,2026-09-15,Carlos,Cartao
-30,Notebook,Eletronicos,1,3500,2026-09-15,Ana,Pix
+1,Webcam,Perifericos,1,280,2026-01-13,Julia,Pix
+2,SSD 1TB,Componentes,1,450,2026-02-14,Pedro,Cartao
+3,Tablet,Eletronicos,1,1500,2026-09-16,Pedro,Pix
+4,Webcam,Perifericos,1,280,2026-08-03,Carlos,Cartao
+5,Memoria RAM 16GB,Componentes,1,380,2026-03-23,Julia,Cartao
+6,Tablet,Eletronicos,1,1500,2026-06-22,Ana,Pix
+7,Memoria RAM 16GB,Componentes,1,380,2026-05-16,Ana,Cartao
+8,Placa de Video,Componentes,3,2800,2026-07-13,Ana,Cartao
+9,Headset,Perifericos,1,300,2026-07-05,Pedro,Pix
+10,Webcam,Perifericos,3,280,2026-05-29,Ana,Boleto
+11,Mouse,Perifericos,1,120,2026-08-21,Julia,Cartao
+12,Mouse,Perifericos,2,120,2026-05-17,Julia,Boleto
+13,Headset,Perifericos,1,300,2026-03-29,Pedro,Cartao
+14,Mouse,Perifericos,2,120,2026-04-23,Julia,Pix
+15,Notebook,Eletronicos,1,3500,2026-01-17,Joao,Cartao
+16,HD 2TB,Componentes,1,420,2026-06-11,Carlos,Cartao
+17,HD 2TB,Componentes,1,420,2026-08-23,Carlos,Pix
+18,Headset,Perifericos,3,300,2026-05-15,Julia,Cartao
+19,Teclado,Perifericos,1,250,2026-04-23,Carlos,Cartao
+20,Notebook,Eletronicos,2,3500,2026-02-26,Carlos,Cartao
+21,Teclado,Perifericos,5,250,2026-02-02,Marina,Pix
+22,Headset,Perifericos,2,300,2026-01-06,Julia,Cartao
+23,Headset,Perifericos,1,300,2026-05-17,Julia,Pix
+24,Smartphone,Eletronicos,1,2200,2026-01-02,Julia,Boleto
+25,Teclado,Perifericos,3,250,2026-04-02,Pedro,Boleto
+26,Mouse,Perifericos,1,120,2026-09-17,Pedro,Pix
+27,Smartphone,Eletronicos,1,2200,2026-09-29,Ana,Cartao
+28,Monitor,Eletronicos,1,1200,2026-07-05,Joao,Pix
+29,Headset,Perifericos,3,300,2026-02-10,Ana,Cartao
+30,Placa de Video,Componentes,1,2800,2026-09-30,Carlos,Pix
+31,Headset,Perifericos,1,300,2026-05-16,Pedro,Boleto
+32,Tablet,Eletronicos,5,1500,2026-04-13,Julia,Pix
+33,Webcam,Perifericos,1,280,2026-08-13,Pedro,Cartao
+34,Notebook,Eletronicos,2,3500,2026-01-11,Pedro,Cartao
+35,Notebook,Eletronicos,1,3500,2026-01-31,Carlos,Pix
+36,Mouse,Perifericos,1,120,2026-09-21,Carlos,Pix
+37,Headset,Perifericos,3,300,2026-08-31,Carlos,Cartao
+38,Smartphone,Eletronicos,1,2200,2026-02-19,Julia,Cartao
+39,Teclado,Perifericos,2,250,2026-01-28,Julia,Cartao
+40,Notebook,Eletronicos,1,3500,2026-06-23,Ana,Pix
+41,Teclado,Perifericos,1,250,2026-08-05,Carlos,Pix
+42,HD 2TB,Componentes,2,420,2026-08-15,Pedro,Pix
+43,Headset,Perifericos,3,300,2026-01-08,Ana,Boleto
+44,Smartphone,Eletronicos,1,2200,2026-09-06,Marina,Pix
+45,Notebook,Eletronicos,1,3500,2026-07-14,Ana,Boleto
+46,SSD 1TB,Componentes,4,450,2026-08-21,Joao,Cartao
+47,Placa de Video,Componentes,1,2800,2026-09-07,Carlos,Pix
+48,Notebook,Eletronicos,1,3500,2026-02-01,Julia,Pix
+49,Teclado,Perifericos,1,250,2026-09-29,Carlos,Pix
+50,Memoria RAM 16GB,Componentes,3,380,2026-02-05,Pedro,Pix
+51,Teclado,Perifericos,2,250,2026-05-07,Pedro,Cartao
+52,Teclado,Perifericos,1,250,2026-09-25,Joao,Boleto
+53,SSD 1TB,Componentes,2,450,2026-05-03,Joao,Cartao
+54,Mouse,Perifericos,2,120,2026-06-11,Ana,Pix
+55,Headset,Perifericos,1,300,2026-02-21,Ana,Cartao
+56,Monitor,Eletronicos,1,1200,2026-06-28,Ana,Boleto
+57,Smartphone,Eletronicos,3,2200,2026-06-04,Pedro,Boleto
+58,Headset,Perifericos,3,300,2026-06-03,Julia,Pix
+59,Mouse,Perifericos,1,120,2026-02-24,Julia,Cartao
+60,Headset,Perifericos,3,300,2026-06-25,Carlos,Cartao
+61,Teclado,Perifericos,1,250,2026-05-09,Ana,Pix
+62,Mouse,Perifericos,2,120,2026-01-02,Joao,Cartao
+63,Mouse,Perifericos,2,120,2026-08-15,Pedro,Cartao
+64,Monitor,Eletronicos,1,1200,2026-03-18,Pedro,Pix
+65,Headset,Perifericos,1,300,2026-08-09,Carlos,Pix
+66,HD 2TB,Componentes,1,420,2026-01-21,Joao,Pix
+67,Monitor,Eletronicos,4,1200,2026-07-28,Pedro,Cartao
+68,Mouse,Perifericos,1,120,2026-03-25,Carlos,Boleto
+69,SSD 1TB,Componentes,3,450,2026-06-20,Marina,Cartao
+70,Memoria RAM 16GB,Componentes,1,380,2026-05-17,Carlos,Cartao
+71,Memoria RAM 16GB,Componentes,3,380,2026-08-29,Carlos,Pix
+72,Mouse,Perifericos,1,120,2026-04-27,Carlos,Pix
+73,Mouse,Perifericos,1,120,2026-02-05,Joao,Pix
+74,Webcam,Perifericos,4,280,2026-06-19,Ana,Pix
+75,Smartphone,Eletronicos,1,2200,2026-05-16,Ana,Pix
+76,SSD 1TB,Componentes,1,450,2026-06-10,Marina,Cartao
+77,Mouse,Perifericos,1,120,2026-04-08,Joao,Pix
+78,Headset,Perifericos,4,300,2026-04-11,Joao,Cartao
+79,HD 2TB,Componentes,2,420,2026-06-10,Julia,Boleto
+80,Mouse,Perifericos,1,120,2026-06-08,Julia,Cartao
+81,Mouse,Perifericos,4,120,2026-03-07,Carlos,Cartao
+82,Webcam,Perifericos,1,280,2026-03-31,Pedro,Cartao
+83,Memoria RAM 16GB,Componentes,2,380,2026-06-05,Joao,Pix
+84,Headset,Perifericos,2,300,2026-06-14,Marina,Cartao
+85,Teclado,Perifericos,1,250,2026-03-28,Julia,Pix
+86,Webcam,Perifericos,2,280,2026-06-21,Ana,Cartao
+87,Webcam,Perifericos,1,280,2026-04-26,Carlos,Pix
+88,Placa de Video,Componentes,2,2800,2026-02-07,Marina,Cartao
+89,Smartphone,Eletronicos,1,2200,2026-07-16,Marina,Cartao
+90,Webcam,Perifericos,3,280,2026-02-24,Marina,Pix
+91,Webcam,Perifericos,3,280,2026-08-26,Ana,Cartao
+92,Monitor,Eletronicos,5,1200,2026-03-10,Marina,Cartao
+93,Headset,Perifericos,3,300,2026-08-15,Pedro,Cartao
+94,Teclado,Perifericos,1,250,2026-08-17,Carlos,Cartao
+95,Mouse,Perifericos,2,120,2026-05-07,Julia,Pix
+96,Teclado,Perifericos,2,250,2026-05-03,Joao,Cartao
+97,Mouse,Perifericos,1,120,2026-06-21,Joao,Boleto
+98,Smartphone,Eletronicos,1,2200,2026-07-16,Julia,Pix
+99,Teclado,Perifericos,1,250,2026-06-19,Pedro,Cartao
+100,Memoria RAM 16GB,Componentes,1,380,2026-07-19,Pedro,Boleto
+101,Memoria RAM 16GB,Componentes,1,380,2026-07-14,Marina,Pix
+102,SSD 1TB,Componentes,1,450,2026-08-03,Pedro,Cartao
+103,Headset,Perifericos,1,300,2026-04-23,Marina,Pix
+104,Notebook,Eletronicos,1,3500,2026-06-22,Julia,Cartao
+105,Smartphone,Eletronicos,1,2200,2026-08-28,Carlos,Boleto
+106,HD 2TB,Componentes,1,420,2026-01-14,Ana,Cartao
+107,Teclado,Perifericos,1,250,2026-01-26,Joao,Pix
+108,Mouse,Perifericos,3,120,2026-07-14,Joao,Cartao
+109,Mouse,Perifericos,1,120,2026-02-11,Marina,Pix
+110,Placa de Video,Componentes,2,2800,2026-06-29,Carlos,Cartao
+111,Webcam,Perifericos,1,280,2026-01-16,Carlos,Pix
+112,Smartphone,Eletronicos,2,2200,2026-03-06,Marina,Cartao
+113,Tablet,Eletronicos,2,1500,2026-05-12,Joao,Pix
+114,SSD 1TB,Componentes,1,450,2026-02-28,Carlos,Boleto
+115,Notebook,Eletronicos,4,3500,2026-06-09,Pedro,Cartao
+116,Teclado,Perifericos,3,250,2026-04-12,Ana,Cartao
+117,Mouse,Perifericos,1,120,2026-06-04,Julia,Cartao
+118,Placa de Video,Componentes,2,2800,2026-01-22,Joao,Cartao
+119,Notebook,Eletronicos,3,3500,2026-06-24,Ana,Boleto
+120,Monitor,Eletronicos,1,1200,2026-07-05,Julia,Boleto
+121,Smartphone,Eletronicos,2,2200,2026-04-01,Julia,Cartao
+122,Headset,Perifericos,2,300,2026-09-05,Marina,Cartao
+123,Mouse,Perifericos,1,120,2026-05-06,Ana,Pix
+124,SSD 1TB,Componentes,3,450,2026-07-14,Joao,Pix
+125,Smartphone,Eletronicos,1,2200,2026-04-19,Joao,Cartao
+126,Memoria RAM 16GB,Componentes,4,380,2026-05-22,Pedro,Pix
+127,Notebook,Eletronicos,1,3500,2026-07-28,Marina,Cartao
+128,Teclado,Perifericos,1,250,2026-09-09,Marina,Cartao
+129,Tablet,Eletronicos,1,1500,2026-05-05,Joao,Cartao
+130,Headset,Perifericos,2,300,2026-06-26,Marina,Boleto
+131,Mouse,Perifericos,1,120,2026-08-21,Joao,Pix
+132,SSD 1TB,Componentes,4,450,2026-06-11,Ana,Cartao
+133,Webcam,Perifericos,1,280,2026-04-09,Carlos,Cartao
+134,Headset,Perifericos,1,300,2026-09-26,Pedro,Pix
+135,Smartphone,Eletronicos,1,2200,2026-04-27,Joao,Pix
+136,Headset,Perifericos,2,300,2026-05-21,Ana,Boleto
+137,Webcam,Perifericos,1,280,2026-03-06,Julia,Boleto
+138,Memoria RAM 16GB,Componentes,1,380,2026-05-26,Marina,Cartao
+139,Placa de Video,Componentes,1,2800,2026-05-10,Marina,Pix
+140,Teclado,Perifericos,2,250,2026-01-28,Carlos,Pix
+141,Mouse,Perifericos,1,120,2026-05-08,Ana,Cartao
+142,Headset,Perifericos,3,300,2026-04-26,Pedro,Pix
+143,Mouse,Perifericos,1,120,2026-08-08,Joao,Cartao
+144,HD 2TB,Componentes,1,420,2026-02-20,Carlos,Cartao
+145,Notebook,Eletronicos,1,3500,2026-05-03,Carlos,Cartao
+146,Teclado,Perifericos,1,250,2026-08-29,Joao,Pix
+147,Mouse,Perifericos,4,120,2026-08-21,Ana,Cartao
+148,SSD 1TB,Componentes,1,450,2026-04-12,Marina,Pix
+149,Smartphone,Eletronicos,1,2200,2026-05-17,Carlos,Pix
+150,Mouse,Perifericos,2,120,2026-05-28,Marina,Pix
+151,Webcam,Perifericos,1,280,2026-05-20,Pedro,Cartao
+152,Headset,Perifericos,1,300,2026-08-10,Julia,Pix
+153,Monitor,Eletronicos,2,1200,2026-01-11,Julia,Cartao
+154,SSD 1TB,Componentes,1,450,2026-03-31,Marina,Cartao
+155,Mouse,Perifericos,4,120,2026-08-12,Julia,Cartao
+156,Teclado,Perifericos,1,250,2026-07-29,Joao,Pix
+157,Smartphone,Eletronicos,2,2200,2026-07-30,Julia,Cartao
+158,Teclado,Perifericos,1,250,2026-01-19,Marina,Pix
+159,Monitor,Eletronicos,1,1200,2026-07-26,Pedro,Cartao
+160,Memoria RAM 16GB,Componentes,1,380,2026-08-25,Marina,Pix
+161,Headset,Perifericos,1,300,2026-09-13,Julia,Cartao
+162,Mouse,Perifericos,2,120,2026-03-09,Joao,Cartao
+163,Monitor,Eletronicos,2,1200,2026-05-03,Julia,Pix
+164,Headset,Perifericos,3,300,2026-02-17,Carlos,Boleto
+165,Teclado,Perifericos,1,250,2026-03-02,Julia,Cartao
+166,SSD 1TB,Componentes,3,450,2026-09-18,Julia,Pix
+167,Placa de Video,Componentes,1,2800,2026-05-05,Marina,Cartao
+168,HD 2TB,Componentes,3,420,2026-09-18,Julia,Boleto
+169,Mouse,Perifericos,1,120,2026-08-01,Joao,Boleto
+170,Memoria RAM 16GB,Componentes,2,380,2026-05-25,Julia,Pix
+171,Placa de Video,Componentes,1,2800,2026-09-08,Carlos,Cartao
+172,Mouse,Perifericos,3,120,2026-07-13,Marina,Boleto
+173,Placa de Video,Componentes,3,2800,2026-05-03,Pedro,Pix
+174,Teclado,Perifericos,3,250,2026-06-12,Julia,Cartao
+175,Mouse,Perifericos,1,120,2026-03-19,Marina,Boleto
+176,Placa de Video,Componentes,1,2800,2026-06-19,Ana,Boleto
+177,Headset,Perifericos,1,300,2026-08-22,Ana,Cartao
+178,Webcam,Perifericos,4,280,2026-03-21,Ana,Cartao
+179,Mouse,Perifericos,1,120,2026-07-23,Julia,Pix
+180,Webcam,Perifericos,3,280,2026-07-14,Joao,Cartao
+181,Teclado,Perifericos,2,250,2026-01-19,Pedro,Pix
+182,HD 2TB,Componentes,4,420,2026-04-27,Julia,Pix
+183,SSD 1TB,Componentes,1,450,2026-02-21,Marina,Pix
+184,Notebook,Eletronicos,1,3500,2026-06-16,Ana,Pix
+185,Smartphone,Eletronicos,2,2200,2026-09-29,Marina,Cartao
+186,Smartphone,Eletronicos,2,2200,2026-02-10,Pedro,Boleto
+187,Mouse,Perifericos,1,120,2026-03-15,Carlos,Cartao
+188,Mouse,Perifericos,2,120,2026-01-05,Marina,Boleto
+189,Smartphone,Eletronicos,1,2200,2026-08-15,Joao,Boleto
+190,HD 2TB,Componentes,1,420,2026-05-09,Marina,Cartao
+191,Mouse,Perifericos,2,120,2026-09-05,Ana,Pix
+192,Headset,Perifericos,2,300,2026-06-01,Ana,Boleto
+193,Mouse,Perifericos,3,120,2026-01-26,Pedro,Cartao
+194,HD 2TB,Componentes,1,420,2026-04-28,Pedro,Cartao
+195,Smartphone,Eletronicos,2,2200,2026-05-09,Julia,Cartao
+196,Webcam,Perifericos,2,280,2026-03-12,Julia,Pix
+197,Notebook,Eletronicos,2,3500,2026-08-14,Ana,Cartao
+198,Monitor,Eletronicos,1,1200,2026-06-01,Joao,Cartao
+199,Monitor,Eletronicos,1,1200,2026-07-07,Pedro,Cartao
+200,Smartphone,Eletronicos,1,2200,2026-09-04,Joao,Cartao
+201,Monitor,Eletronicos,1,1200,2026-02-08,Carlos,Cartao
+202,Webcam,Perifericos,2,280,2026-07-23,Pedro,Pix
+203,Notebook,Eletronicos,2,3500,2026-03-05,Marina,Pix
+204,Mouse,Perifericos,1,120,2026-07-15,Julia,Boleto
+205,Mouse,Perifericos,2,120,2026-01-13,Pedro,Boleto
+206,HD 2TB,Componentes,3,420,2026-04-24,Julia,Pix
+207,HD 2TB,Componentes,1,420,2026-06-04,Julia,Cartao
+208,HD 2TB,Componentes,1,420,2026-06-05,Marina,Pix
+209,Headset,Perifericos,4,300,2026-07-18,Marina,Pix
+210,Webcam,Perifericos,1,280,2026-08-03,Pedro,Cartao
+211,Teclado,Perifericos,4,250,2026-02-20,Marina,Cartao
+212,Mouse,Perifericos,4,120,2026-07-09,Carlos,Cartao
+213,Memoria RAM 16GB,Componentes,3,380,2026-02-20,Julia,Pix
+214,Webcam,Perifericos,4,280,2026-02-01,Marina,Pix
+215,HD 2TB,Componentes,2,420,2026-08-21,Ana,Cartao
+216,Headset,Perifericos,1,300,2026-01-11,Ana,Cartao
+217,Monitor,Eletronicos,2,1200,2026-04-16,Ana,Cartao
+218,Headset,Perifericos,2,300,2026-04-30,Joao,Cartao
+219,Headset,Perifericos,1,300,2026-05-22,Carlos,Boleto
+220,SSD 1TB,Componentes,1,450,2026-02-26,Julia,Boleto
+221,Mouse,Perifericos,1,120,2026-05-02,Pedro,Pix
+222,Notebook,Eletronicos,1,3500,2026-08-04,Pedro,Pix
+223,Teclado,Perifericos,1,250,2026-07-05,Pedro,Cartao
+224,Tablet,Eletronicos,3,1500,2026-01-23,Julia,Cartao
+225,Headset,Perifericos,1,300,2026-08-23,Julia,Boleto
+226,Teclado,Perifericos,1,250,2026-07-25,Marina,Cartao
+227,HD 2TB,Componentes,1,420,2026-02-07,Ana,Pix
+228,Monitor,Eletronicos,1,1200,2026-06-16,Marina,Boleto
+229,Teclado,Perifericos,1,250,2026-08-09,Ana,Cartao
+230,Webcam,Perifericos,1,280,2026-04-21,Marina,Cartao
+231,Mouse,Perifericos,1,120,2026-08-21,Marina,Cartao
+232,Teclado,Perifericos,2,250,2026-05-11,Joao,Boleto
+233,Teclado,Perifericos,1,250,2026-02-16,Ana,Pix
+234,SSD 1TB,Componentes,4,450,2026-03-08,Pedro,Pix
+235,Headset,Perifericos,2,300,2026-03-04,Marina,Pix
+236,SSD 1TB,Componentes,1,450,2026-01-27,Joao,Cartao
+237,Headset,Perifericos,1,300,2026-04-19,Carlos,Cartao
+238,Monitor,Eletronicos,2,1200,2026-07-08,Ana,Cartao
+239,Memoria RAM 16GB,Componentes,3,380,2026-01-14,Pedro,Boleto
+240,Mouse,Perifericos,1,120,2026-04-03,Joao,Cartao
+241,Mouse,Perifericos,2,120,2026-01-04,Carlos,Boleto
+242,Teclado,Perifericos,1,250,2026-03-14,Julia,Cartao
+243,SSD 1TB,Componentes,1,450,2026-04-21,Marina,Cartao
+244,Mouse,Perifericos,3,120,2026-06-16,Pedro,Cartao
+245,Smartphone,Eletronicos,1,2200,2026-01-26,Julia,Pix
+246,Teclado,Perifericos,2,250,2026-08-15,Marina,Pix
+247,Monitor,Eletronicos,2,1200,2026-08-09,Ana,Pix
+248,Teclado,Perifericos,5,250,2026-06-07,Ana,Pix
+249,Notebook,Eletronicos,2,3500,2026-04-15,Joao,Boleto
+250,SSD 1TB,Componentes,1,450,2026-05-29,Joao,Pix
+251,Teclado,Perifericos,1,250,2026-03-08,Marina,Cartao
+252,Headset,Perifericos,2,300,2026-07-01,Ana,Cartao
+253,Teclado,Perifericos,2,250,2026-08-24,Ana,Boleto
+254,Headset,Perifericos,1,300,2026-08-02,Joao,Pix
+255,Mouse,Perifericos,1,120,2026-08-24,Julia,Boleto
+256,Memoria RAM 16GB,Componentes,1,380,2026-05-05,Marina,Cartao
+257,Teclado,Perifericos,1,250,2026-06-08,Julia,Pix
+258,Smartphone,Eletronicos,1,2200,2026-09-19,Julia,Pix
+259,HD 2TB,Componentes,3,420,2026-06-28,Joao,Cartao
+260,Memoria RAM 16GB,Componentes,1,380,2026-05-01,Ana,Pix
+261,Headset,Perifericos,2,300,2026-02-08,Carlos,Boleto
+262,Teclado,Perifericos,2,250,2026-08-18,Julia,Boleto
+263,Webcam,Perifericos,1,280,2026-06-15,Julia,Pix
+264,Teclado,Perifericos,1,250,2026-06-05,Joao,Cartao
+265,Notebook,Eletronicos,1,3500,2026-08-25,Marina,Pix
+266,Mouse,Perifericos,1,120,2026-02-16,Pedro,Cartao
+267,Headset,Perifericos,2,300,2026-01-22,Marina,Boleto
+268,Smartphone,Eletronicos,1,2200,2026-09-01,Pedro,Pix
+269,Monitor,Eletronicos,2,1200,2026-06-25,Julia,Pix
+270,Notebook,Eletronicos,2,3500,2026-08-13,Marina,Cartao
+271,Mouse,Perifericos,1,120,2026-05-25,Marina,Cartao
+272,Headset,Perifericos,2,300,2026-06-21,Ana,Pix
+273,Mouse,Perifericos,4,120,2026-05-10,Julia,Boleto
+274,Headset,Perifericos,2,300,2026-03-18,Joao,Pix
+275,HD 2TB,Componentes,1,420,2026-06-08,Julia,Cartao
+276,Headset,Perifericos,2,300,2026-02-13,Joao,Cartao
+277,Mouse,Perifericos,4,120,2026-03-07,Julia,Cartao
+278,Placa de Video,Componentes,1,2800,2026-09-27,Ana,Cartao
+279,Mouse,Perifericos,1,120,2026-07-05,Joao,Pix
+280,HD 2TB,Componentes,1,420,2026-09-06,Carlos,Pix
+281,Notebook,Eletronicos,3,3500,2026-02-21,Pedro,Cartao
+282,Memoria RAM 16GB,Componentes,2,380,2026-01-20,Julia,Pix
+283,Monitor,Eletronicos,3,1200,2026-07-12,Carlos,Pix
+284,SSD 1TB,Componentes,1,450,2026-03-26,Julia,Cartao
+285,Webcam,Perifericos,2,280,2026-05-02,Marina,Cartao
+286,SSD 1TB,Componentes,4,450,2026-04-30,Pedro,Pix
+287,SSD 1TB,Componentes,2,450,2026-04-10,Joao,Cartao
+288,Teclado,Perifericos,1,250,2026-05-25,Marina,Cartao
+289,Smartphone,Eletronicos,1,2200,2026-04-13,Pedro,Pix
+290,Webcam,Perifericos,2,280,2026-07-10,Pedro,Boleto
+291,Teclado,Perifericos,1,250,2026-03-05,Joao,Pix
+292,Teclado,Perifericos,1,250,2026-09-20,Carlos,Cartao
+293,HD 2TB,Componentes,1,420,2026-08-19,Joao,Boleto
+294,Teclado,Perifericos,1,250,2026-07-11,Carlos,Cartao
+295,Tablet,Eletronicos,2,1500,2026-06-13,Ana,Cartao
+296,SSD 1TB,Componentes,3,450,2026-03-12,Ana,Pix
+297,Webcam,Perifericos,2,280,2026-03-13,Julia,Cartao
+298,HD 2TB,Componentes,1,420,2026-01-10,Joao,Pix
+299,HD 2TB,Componentes,1,420,2026-09-28,Marina,Pix
+300,Mouse,Perifericos,2,120,2026-01-25,Carlos,Cartao
+301,Teclado,Perifericos,1,250,2026-02-26,Marina,Cartao
+302,Teclado,Perifericos,1,250,2026-05-04,Julia,Pix
+303,Headset,Perifericos,2,300,2026-05-04,Pedro,Cartao
+304,Notebook,Eletronicos,1,3500,2026-07-04,Ana,Boleto
+305,SSD 1TB,Componentes,3,450,2026-09-17,Pedro,Pix
+306,Notebook,Eletronicos,1,3500,2026-07-18,Joao,Pix
+307,SSD 1TB,Componentes,2,450,2026-06-26,Carlos,Cartao
+308,SSD 1TB,Componentes,1,450,2026-06-20,Carlos,Pix
+309,Memoria RAM 16GB,Componentes,2,380,2026-03-31,Julia,Cartao
+310,Webcam,Perifericos,4,280,2026-03-11,Ana,Cartao
+311,Notebook,Eletronicos,3,3500,2026-04-14,Ana,Cartao
+312,Mouse,Perifericos,3,120,2026-06-08,Pedro,Cartao
+313,Teclado,Perifericos,1,250,2026-01-19,Julia,Pix
+314,SSD 1TB,Componentes,1,450,2026-06-19,Joao,Pix
+315,Memoria RAM 16GB,Componentes,1,380,2026-08-14,Marina,Pix
+316,Webcam,Perifericos,1,280,2026-07-08,Pedro,Pix
+317,Teclado,Perifericos,1,250,2026-08-09,Pedro,Boleto
+318,Mouse,Perifericos,1,120,2026-02-22,Ana,Pix
+319,Teclado,Perifericos,1,250,2026-08-07,Carlos,Cartao
+320,Notebook,Eletronicos,1,3500,2026-06-30,Pedro,Boleto
+321,Placa de Video,Componentes,1,2800,2026-01-30,Ana,Cartao
+322,Teclado,Perifericos,2,250,2026-03-23,Ana,Pix
+323,SSD 1TB,Componentes,2,450,2026-01-18,Carlos,Pix
+324,Mouse,Perifericos,1,120,2026-07-16,Pedro,Pix
+325,Teclado,Perifericos,1,250,2026-07-09,Joao,Cartao
+326,Monitor,Eletronicos,1,1200,2026-07-07,Marina,Pix
+327,HD 2TB,Componentes,1,420,2026-01-14,Julia,Pix
+328,HD 2TB,Componentes,2,420,2026-03-02,Joao,Cartao
+329,Tablet,Eletronicos,1,1500,2026-05-27,Julia,Boleto
+330,Monitor,Eletronicos,2,1200,2026-02-07,Marina,Pix
+331,Placa de Video,Componentes,1,2800,2026-06-13,Julia,Pix
+332,Headset,Perifericos,4,300,2026-06-03,Carlos,Cartao
+333,Webcam,Perifericos,5,280,2026-07-05,Pedro,Pix
+334,SSD 1TB,Componentes,2,450,2026-05-02,Marina,Pix
+335,Mouse,Perifericos,1,120,2026-03-08,Pedro,Boleto
+336,Teclado,Perifericos,1,250,2026-09-03,Pedro,Cartao
+337,Headset,Perifericos,1,300,2026-03-06,Joao,Cartao
+338,Webcam,Perifericos,2,280,2026-06-26,Carlos,Boleto
+339,Webcam,Perifericos,3,280,2026-04-04,Carlos,Cartao
+340,Notebook,Eletronicos,1,3500,2026-03-05,Pedro,Pix
+341,Mouse,Perifericos,1,120,2026-04-26,Joao,Boleto
+342,Mouse,Perifericos,4,120,2026-02-10,Joao,Pix
+343,Mouse,Perifericos,1,120,2026-06-05,Pedro,Cartao
+344,Smartphone,Eletronicos,2,2200,2026-03-20,Carlos,Cartao
+345,Headset,Perifericos,4,300,2026-01-22,Ana,Pix
+346,SSD 1TB,Componentes,2,450,2026-05-16,Julia,Pix
+347,Headset,Perifericos,1,300,2026-01-16,Marina,Boleto
+348,Webcam,Perifericos,3,280,2026-06-04,Marina,Pix
+349,Teclado,Perifericos,1,250,2026-08-21,Ana,Cartao
+350,Teclado,Perifericos,1,250,2026-08-26,Carlos,Pix
+351,Memoria RAM 16GB,Componentes,1,380,2026-06-13,Julia,Boleto
+352,Teclado,Perifericos,1,250,2026-07-09,Pedro,Cartao
+353,Teclado,Perifericos,1,250,2026-05-17,Marina,Pix
+354,Mouse,Perifericos,4,120,2026-07-16,Pedro,Cartao
+355,HD 2TB,Componentes,1,420,2026-06-17,Pedro,Cartao
+356,Smartphone,Eletronicos,1,2200,2026-09-21,Marina,Cartao
+357,Notebook,Eletronicos,1,3500,2026-07-21,Pedro,Cartao
+358,Headset,Perifericos,2,300,2026-01-25,Ana,Pix
+359,Memoria RAM 16GB,Componentes,3,380,2026-08-29,Joao,Cartao
+360,Teclado,Perifericos,1,250,2026-05-16,Julia,Pix
+361,Notebook,Eletronicos,1,3500,2026-01-27,Pedro,Cartao
+362,Mouse,Perifericos,1,120,2026-07-17,Pedro,Cartao
+363,Memoria RAM 16GB,Componentes,1,380,2026-03-02,Carlos,Boleto
+364,SSD 1TB,Componentes,2,450,2026-06-23,Pedro,Boleto
+365,Tablet,Eletronicos,1,1500,2026-09-18,Marina,Cartao
+366,Monitor,Eletronicos,1,1200,2026-06-20,Marina,Cartao
+367,HD 2TB,Componentes,1,420,2026-03-13,Joao,Boleto
+368,Teclado,Perifericos,3,250,2026-06-03,Pedro,Pix
+369,Headset,Perifericos,1,300,2026-06-03,Marina,Cartao
+370,Webcam,Perifericos,3,280,2026-08-02,Pedro,Pix
+371,Memoria RAM 16GB,Componentes,4,380,2026-01-14,Pedro,Cartao
+372,SSD 1TB,Componentes,1,450,2026-04-27,Julia,Pix
+373,Headset,Perifericos,1,300,2026-07-14,Carlos,Cartao
+374,Headset,Perifericos,1,300,2026-02-26,Carlos,Pix
+375,Smartphone,Eletronicos,2,2200,2026-04-15,Marina,Cartao
+376,Teclado,Perifericos,1,250,2026-02-01,Julia,Pix
+377,Mouse,Perifericos,4,120,2026-09-02,Pedro,Pix
+378,Teclado,Perifericos,2,250,2026-09-30,Joao,Cartao
+379,Memoria RAM 16GB,Componentes,4,380,2026-05-16,Pedro,Cartao
+380,Mouse,Perifericos,5,120,2026-06-02,Carlos,Boleto
+381,SSD 1TB,Componentes,1,450,2026-04-17,Julia,Cartao
+382,Mouse,Perifericos,2,120,2026-05-21,Joao,Pix
+383,Mouse,Perifericos,3,120,2026-07-22,Joao,Boleto
+384,Mouse,Perifericos,4,120,2026-05-28,Julia,Pix
+385,Webcam,Perifericos,1,280,2026-09-03,Carlos,Pix
+386,HD 2TB,Componentes,2,420,2026-05-20,Carlos,Pix
+387,Mouse,Perifericos,1,120,2026-01-26,Julia,Boleto
+388,Mouse,Perifericos,1,120,2026-02-21,Marina,Pix
+389,Webcam,Perifericos,4,280,2026-03-12,Ana,Boleto
+390,Smartphone,Eletronicos,2,2200,2026-09-01,Marina,Cartao
+391,Mouse,Perifericos,2,120,2026-05-27,Julia,Pix
+392,Webcam,Perifericos,3,280,2026-04-29,Pedro,Cartao
+393,Notebook,Eletronicos,1,3500,2026-03-31,Marina,Boleto
+394,HD 2TB,Componentes,2,420,2026-07-23,Marina,Pix
+395,Memoria RAM 16GB,Componentes,2,380,2026-05-29,Ana,Pix
+396,Monitor,Eletronicos,2,1200,2026-06-21,Joao,Cartao
+397,Headset,Perifericos,1,300,2026-03-10,Pedro,Cartao
+398,Monitor,Eletronicos,1,1200,2026-03-25,Julia,Cartao
+399,Smartphone,Eletronicos,2,2200,2026-06-22,Joao,Cartao
+400,Smartphone,Eletronicos,1,2200,2026-07-27,Marina,Cartao
+401,Webcam,Perifericos,4,280,2026-04-05,Carlos,Cartao
+402,Notebook,Eletronicos,1,3500,2026-07-16,Carlos,Cartao
+403,Mouse,Perifericos,2,120,2026-01-06,Joao,Cartao
+404,Notebook,Eletronicos,1,3500,2026-03-02,Marina,Pix
+405,Teclado,Perifericos,3,250,2026-06-09,Julia,Pix
+406,Mouse,Perifericos,1,120,2026-04-24,Carlos,Boleto
+407,Teclado,Perifericos,3,250,2026-07-11,Marina,Cartao
+408,SSD 1TB,Componentes,2,450,2026-04-22,Carlos,Cartao
+409,SSD 1TB,Componentes,1,450,2026-09-27,Marina,Cartao
+410,HD 2TB,Componentes,3,420,2026-02-27,Ana,Cartao
+411,Tablet,Eletronicos,1,1500,2026-03-18,Carlos,Pix
+412,Monitor,Eletronicos,1,1200,2026-04-16,Julia,Cartao
+413,Teclado,Perifericos,1,250,2026-01-29,Marina,Pix
+414,Headset,Perifericos,2,300,2026-08-25,Julia,Cartao
+415,Teclado,Perifericos,1,250,2026-01-02,Julia,Pix
+416,Teclado,Perifericos,4,250,2026-02-02,Pedro,Boleto
+417,Notebook,Eletronicos,1,3500,2026-08-30,Ana,Pix
+418,Monitor,Eletronicos,1,1200,2026-08-04,Joao,Boleto
+419,Memoria RAM 16GB,Componentes,4,380,2026-07-13,Marina,Pix
+420,Memoria RAM 16GB,Componentes,1,380,2026-03-10,Julia,Boleto
+421,Placa de Video,Componentes,4,2800,2026-07-21,Pedro,Pix
+422,Memoria RAM 16GB,Componentes,2,380,2026-01-12,Joao,Cartao
+423,Teclado,Perifericos,1,250,2026-07-14,Carlos,Pix
+424,Mouse,Perifericos,1,120,2026-02-27,Ana,Cartao
+425,SSD 1TB,Componentes,1,450,2026-01-09,Carlos,Pix
+426,Notebook,Eletronicos,1,3500,2026-01-25,Carlos,Cartao
+427,Mouse,Perifericos,5,120,2026-04-22,Ana,Pix
+428,Mouse,Perifericos,2,120,2026-06-13,Pedro,Cartao
+429,Mouse,Perifericos,1,120,2026-06-04,Carlos,Boleto
+430,Teclado,Perifericos,2,250,2026-05-21,Ana,Cartao
+431,SSD 1TB,Componentes,2,450,2026-03-31,Julia,Cartao
+432,Notebook,Eletronicos,2,3500,2026-06-26,Julia,Cartao
+433,Mouse,Perifericos,1,120,2026-08-02,Marina,Pix
+434,SSD 1TB,Componentes,1,450,2026-08-31,Carlos,Boleto
+435,Webcam,Perifericos,4,280,2026-08-26,Ana,Cartao
+436,Headset,Perifericos,1,300,2026-03-10,Marina,Pix
+437,Webcam,Perifericos,2,280,2026-08-19,Joao,Pix
+438,Smartphone,Eletronicos,2,2200,2026-05-18,Marina,Cartao
+439,Memoria RAM 16GB,Componentes,2,380,2026-04-07,Pedro,Cartao
+440,Teclado,Perifericos,1,250,2026-06-20,Joao,Boleto
+441,HD 2TB,Componentes,1,420,2026-03-02,Julia,Boleto
+442,Mouse,Perifericos,2,120,2026-04-15,Marina,Boleto
+443,SSD 1TB,Componentes,1,450,2026-07-14,Marina,Cartao
+444,Mouse,Perifericos,3,120,2026-09-20,Marina,Cartao
+445,SSD 1TB,Componentes,1,450,2026-06-13,Carlos,Pix
+446,Headset,Perifericos,1,300,2026-04-24,Julia,Pix
+447,HD 2TB,Componentes,1,420,2026-08-02,Joao,Pix
+448,Mouse,Perifericos,4,120,2026-05-06,Marina,Cartao
+449,Mouse,Perifericos,1,120,2026-09-08,Julia,Cartao
+450,Smartphone,Eletronicos,1,2200,2026-06-30,Carlos,Pix
+451,Smartphone,Eletronicos,3,2200,2026-01-31,Pedro,Pix
+452,HD 2TB,Componentes,3,420,2026-01-25,Ana,Cartao
+453,Tablet,Eletronicos,1,1500,2026-03-19,Ana,Pix
+454,Notebook,Eletronicos,1,3500,2026-09-05,Julia,Cartao
+455,Headset,Perifericos,1,300,2026-01-07,Ana,Cartao
+456,Placa de Video,Componentes,2,2800,2026-01-09,Pedro,Cartao
+457,Memoria RAM 16GB,Componentes,1,380,2026-04-02,Ana,Boleto
+458,Mouse,Perifericos,1,120,2026-09-27,Joao,Cartao
+459,Teclado,Perifericos,1,250,2026-07-11,Marina,Cartao
+460,Webcam,Perifericos,1,280,2026-06-03,Julia,Cartao
+461,Placa de Video,Componentes,1,2800,2026-01-17,Ana,Cartao
+462,Teclado,Perifericos,1,250,2026-01-05,Julia,Pix
+463,Teclado,Perifericos,4,250,2026-06-19,Pedro,Boleto
+464,HD 2TB,Componentes,3,420,2026-01-22,Carlos,Pix
+465,Memoria RAM 16GB,Componentes,1,380,2026-09-01,Joao,Pix
+466,HD 2TB,Componentes,1,420,2026-01-17,Carlos,Boleto
+467,HD 2TB,Componentes,4,420,2026-03-15,Julia,Cartao
+468,Mouse,Perifericos,1,120,2026-05-04,Pedro,Cartao
+469,HD 2TB,Componentes,1,420,2026-06-19,Marina,Cartao
+470,Placa de Video,Componentes,1,2800,2026-02-10,Pedro,Cartao
+471,Monitor,Eletronicos,2,1200,2026-04-29,Ana,Pix
+472,HD 2TB,Componentes,1,420,2026-07-23,Joao,Pix
+473,Placa de Video,Componentes,4,2800,2026-09-09,Carlos,Pix
+474,Teclado,Perifericos,1,250,2026-07-14,Ana,Cartao
+475,Mouse,Perifericos,1,120,2026-02-07,Ana,Pix
+476,SSD 1TB,Componentes,1,450,2026-03-20,Julia,Cartao
+477,Monitor,Eletronicos,1,1200,2026-06-07,Marina,Pix
+478,Monitor,Eletronicos,2,1200,2026-04-06,Marina,Cartao
+479,Teclado,Perifericos,1,250,2026-01-14,Ana,Pix
+480,Headset,Perifericos,1,300,2026-06-16,Marina,Pix
+481,SSD 1TB,Componentes,2,450,2026-05-05,Pedro,Cartao
+482,Smartphone,Eletronicos,1,2200,2026-05-18,Joao,Pix
+483,Smartphone,Eletronicos,2,2200,2026-05-22,Marina,Pix
+484,Mouse,Perifericos,2,120,2026-05-07,Julia,Cartao
+485,Smartphone,Eletronicos,4,2200,2026-02-24,Carlos,Pix
+486,Mouse,Perifericos,1,120,2026-07-14,Joao,Cartao
+487,Memoria RAM 16GB,Componentes,4,380,2026-03-11,Joao,Pix
+488,Tablet,Eletronicos,4,1500,2026-06-10,Carlos,Boleto
+489,Mouse,Perifericos,1,120,2026-09-09,Pedro,Cartao
+490,Mouse,Perifericos,2,120,2026-07-21,Joao,Pix
+491,Headset,Perifericos,1,300,2026-04-03,Julia,Cartao
+492,SSD 1TB,Componentes,3,450,2026-04-18,Marina,Cartao
+493,Notebook,Eletronicos,2,3500,2026-07-29,Julia,Cartao
+494,Mouse,Perifericos,1,120,2026-03-20,Julia,Cartao
+495,Teclado,Perifericos,1,250,2026-09-03,Pedro,Cartao
+496,HD 2TB,Componentes,4,420,2026-08-03,Pedro,Pix
+497,Webcam,Perifericos,2,280,2026-02-13,Ana,Cartao
+498,Mouse,Perifericos,2,120,2026-01-23,Pedro,Boleto
+499,Teclado,Perifericos,1,250,2026-06-19,Marina,Pix
+500,Tablet,Eletronicos,2,1500,2026-09-23,Pedro,Cartao
